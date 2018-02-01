@@ -60,8 +60,9 @@ sudo apt-get install php7.1-redis --assume-yes
 
 # Instale apartir daqui o que você desejar
 
-echo "--- Instalando o Node JS e npm ---" 
-sudo apt-get install nodejs --assume-yes
+echo "--- Instalando o npm e NodeJS ---" 
 sudo apt-get install npm --assume-yes 
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install nodejs --assume-yes
 
 echo "[OK] --- Ambiente de desenvolvimento concluido ---"
