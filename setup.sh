@@ -70,4 +70,7 @@ echo -e "<Directory \"/var/www/html\">"  | sudo tee -a /etc/apache2/sites-availa
 echo -e "     AllowOverride All" | sudo tee -a /etc/apache2/sites-available/000-default.conf
 echo -e "</Directory>" | sudo tee -a /etc/apache2/sites-available/000-default.conf
 
+echo "--- Reiniciando Apache ---"
+sudo service apache2 restart
+
 echo "[OK] --- Ambiente de desenvolvimento concluido ---"
