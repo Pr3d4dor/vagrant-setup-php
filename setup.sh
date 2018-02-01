@@ -58,6 +58,10 @@ echo "--- Instalando Banco NoSQL -> Redis <- ---"
 sudo apt-get install redis-server --assume-yes
 sudo apt-get install php7.1-redis --assume-yes
 
-# Instale apartir daqui o que você desejar 
+# Instale apartir daqui o que você desejar
+
+echo "--- Instalando o Node JS e npm ---" 
+sudo apt-get install nodejs --assume-yes
+sudo apt-get install npm --assume-yes 
 
 echo "[OK] --- Ambiente de desenvolvimento concluido ---"
