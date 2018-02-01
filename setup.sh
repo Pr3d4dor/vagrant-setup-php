@@ -65,4 +65,7 @@ sudo apt-get install npm --assume-yes
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install nodejs --assume-yes
 
+echo "--- Correcao de bugs do apache ---"
+sudo echo "<Directory /var/www/html> AllowOverride All </Directory>" >> /etc/apache2/sites-available/000-default.conf
+
 echo "[OK] --- Ambiente de desenvolvimento concluido ---"
